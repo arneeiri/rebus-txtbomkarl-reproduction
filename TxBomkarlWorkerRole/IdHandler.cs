@@ -10,6 +10,7 @@ namespace TxBomkarlWorkerRole
         {
             using (var context = new TxBomkarlDbContext())
             {
+                //Crashes here.
                 context.Things.Where(t => t.Id == message.Id).ToArray();
             }
         }
